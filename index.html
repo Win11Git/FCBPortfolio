@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    
+    <title>Herwin - IT Programmer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #0d0e12;
+        color: #e2e8f0;
+      }
+
+      .font-mono-tech {
+        font-family: 'JetBrains Mono', monospace;
+      }
+
+      /* Technical subtle grid background pattern */
+      .tech-grid-bg {
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        background-size: 32px 32px;
+      }
+    </style>
+  </head>
+  <body class="bg-[#0c0d12] text-slate-200 antialiased min-h-screen flex flex-col tech-grid-bg">
+    <!-- ==================== NAVIGATION ==================== -->
+    <header class="sticky top-0 z-50 bg-[#0c0d12]/90 backdrop-blur border-b border-slate-800">
+      <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+        <!-- EDIT: NAVBAR_BRAND -->
+        <a href="#" class="font-mono-tech text-base md:text-lg font-bold tracking-tight text-white hover:text-sky-400 transition-colors"> FCB Portfolio </a>
+        <!-- NAV LINKS -->
+        <nav class="flex items-center gap-6 sm:gap-8 font-mono-tech text-sm text-slate-300">
+          <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+          <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
+          <a href="#skills" class="hover:text-sky-400 transition-colors">Skills/Tools</a>
+          <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="flex-1 max-w-5xl mx-auto w-full px-6 py-12 md:py-16 space-y-20 md:space-y-28">
+      <!-- ==================== HERO SECTION ==================== -->
+      <section class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-14 pt-4 md:pt-8">
+        <!-- HERO IMAGE / AVATAR -->
+        <div class="w-56 h-56 md:w-64 md:h-64 rounded-xl border border-slate-700/80 bg-slate-900/60 p-2 overflow-hidden shadow-2xl shadow-sky-950/20 flex-shrink-0">
+          <!-- EDIT: PROFILE_IMAGE -->
+          <img src="profile.png" alt="Avatar" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <!-- HERO DETAILS -->
+        <div class="flex flex-col items-center md:items-start text-center md:text-left max-w-lg">
+          <!-- EDIT: YOUR_NAME -->
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white font-mono-tech"> Herwin T. Magana </h1>
+          <!-- EDIT: YOUR_JOB_TITLE -->
+          <h2 class="text-xl md:text-2xl font-semibold text-sky-400 mt-2 font-mono-tech"> IT Programmer </h2>
+          <!-- EDIT: SHORT_INTRODUCTION -->
+          <p class="text-slate-400 text-sm md:text-base mt-4 leading-relaxed">Aspiring IT Programmer skilled in Java fundamentals and software development, passionate about coding, problem-solving, and building practical applications. </p>
+          <!-- HERO ACTIONS -->
+          <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 mt-6">
+            <a href="#projects" class="px-5 py-2.5 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-950 font-mono-tech font-semibold text-sm transition-all shadow-md shadow-sky-500/20"> View My Project </a>
+            <a href="#contact" class="px-5 py-2.5 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-950 font-mono-tech font-semibold text-sm transition-all shadow-md shadow-sky-500/20"> Contact Me </a>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== ABOUT SECTION ==================== -->
+      <section id="about" class="space-y-6">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-center text-white font-mono-tech"> About </h2>
+        <div class="rounded-2xl border border-slate-800 bg-[#12141c]/70 backdrop-blur p-8 md:p-12 shadow-xl shadow-black/40 text-center">
+          <!-- EDIT: ABOUT_YOU -->
+          <p class="text-slate-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto"> I am an aspiring IT Programmer with a strong interest in software development, application programming, and problem-solving through technology. I have foundational knowledge of programming concepts, Java programming, and software logic, and I am continuously improving my technical skills by learning and building projects. My goal is to develop functional, reliable, and user-friendly applications that address real-world needs. I am eager to explore new technologies, strengthen my coding abilities, and contribute to meaningful software development projects. </p>
+        </div>
+      </section>
+      <!-- ==================== PROJECTS SECTION ==================== -->
+      <section id="projects" class="space-y-8">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-center text-white font-mono-tech"> Project </h2>
+        <!-- 3 PROJECT CARDS GRID -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- PROJECT CARD 1 -->
+          <div class="flex flex-col rounded-xl border border-slate-800 bg-[#12141c] overflow-hidden hover:border-slate-700 transition-all shadow-lg shadow-black/30">
+            <div class="w-full h-44 overflow-hidden bg-slate-900 border-b border-slate-800">
+              <!-- EDIT: PROJECT_IMAGE_1 -->
+              <img src="Project1.jpg" alt="Project Title" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 flex flex-col flex-1 space-y-3">
+              <!-- EDIT: PROJECT_TITLE_1 -->
+              <h3 class="text-lg font-bold text-white font-mono-tech"> Herwin Lyrics </h3>
+              <!-- EDIT: PROJECT_DESCRIPTION_1 -->
+              <p class="text-slate-400 text-sm leading-relaxed flex-1"> A music streaming website featuring AI-generated songs and lyrics, providing users with an engaging platform to explore and enjoy music.</p>
+              <!-- EDIT: PROJECT_LINK_1 -->
+              <div class="pt-2">
+                <a href="#" class="inline-block px-4 py-2 rounded-md bg-sky-500 hover:bg-sky-400 text-slate-950 font-mono-tech font-semibold text-xs tracking-wide transition-colors"> Project Link </a>
+              </div>
+            </div>
+          </div>
+          <!-- PROJECT CARD 2 -->
+          <div class="flex flex-col rounded-xl border border-slate-800 bg-[#12141c] overflow-hidden hover:border-slate-700 transition-all shadow-lg shadow-black/30">
+            <div class="w-full h-44 overflow-hidden bg-slate-900 border-b border-slate-800">
+              <!-- EDIT: PROJECT_IMAGE_2 -->
+              <img src="Project2.PNG" alt="Project Title" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 flex flex-col flex-1 space-y-3">
+              <!-- EDIT: PROJECT_TITLE_2 -->
+              <h3 class="text-lg font-bold text-white font-mono-tech"> Cinema Trailer </h3>
+              <!-- EDIT: PROJECT_DESCRIPTION_2 -->
+              <p class="text-slate-400 text-sm leading-relaxed flex-1"> A movie trailer browsing website that showcases films with posters and organized categories, helping users discover movies easily. </p>
+              <!-- EDIT: PROJECT_LINK_2 -->
+              <div class="pt-2">
+                <a href="#" class="inline-block px-4 py-2 rounded-md bg-sky-500 hover:bg-sky-400 text-slate-950 font-mono-tech font-semibold text-xs tracking-wide transition-colors"> Project Link </a>
+              </div>
+            </div>
+          </div>
+          <!-- PROJECT CARD 3 -->
+          <div class="flex flex-col rounded-xl border border-slate-800 bg-[#12141c] overflow-hidden hover:border-slate-700 transition-all shadow-lg shadow-black/30">
+            <div class="w-full h-44 overflow-hidden bg-slate-900 border-b border-slate-800">
+              <!-- EDIT: PROJECT_IMAGE_3 -->
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8rC7Q2gdpDD9DAOA3xOP5KOO6GPy0PL09NsYSAGbvfT8pPszefHhQMxPn04T1bNm6BR6nlSoWoKcgBwuOJDsp7kI83J_xQFllwC0seBwz0QUSm1fyPSvc5uXATFqCRTYtZNJGKpKzKSOpq1caYL14eApwPPZUDrXR-JxGgPuawywc1VP8y0RVC0TkgHmFKniu-XWirwSSLsky-u2sRWO0s0yWVlUUaugw3Hay2-0" alt="Project Title" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 flex flex-col flex-1 space-y-3">
+              <!-- EDIT: PROJECT_TITLE_3 -->
+              <h3 class="text-lg font-bold text-white font-mono-tech"> HTMB - High Trust Mobile Bank </h3>
+              <!-- EDIT: PROJECT_DESCRIPTION_3 -->
+              <p class="text-slate-400 text-sm leading-relaxed flex-1"> A banking application concept designed to provide secure financial management, user-friendly transactions, and convenient access to essential banking features. </p>
+              <!-- EDIT: PROJECT_LINK_3 -->
+              <div class="pt-2">
+                <a href="#" class="inline-block px-4 py-2 rounded-md bg-sky-500 hover:bg-sky-400 text-slate-950 font-mono-tech font-semibold text-xs tracking-wide transition-colors"> Project Link </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== SKILLS & TOOLS SECTION ==================== -->
+      <section id="skills" class="space-y-8">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-center text-white font-mono-tech"> Skills &amp; Tools </h2>
+        <!-- 2 CARDS GRID -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <!-- SKILLS CARD -->
+          <div class="rounded-xl border border-slate-800 bg-[#12141c] overflow-hidden shadow-lg shadow-black/30">
+            <div class="bg-slate-900/80 px-6 py-3 border-b border-slate-800 text-center">
+              <h3 class="text-base font-bold text-slate-200 font-mono-tech tracking-wide"> Skills </h3>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-2.5 font-mono-tech text-sm text-slate-300">
+                <!-- EDIT: SKILL_ITEM_1 -->
+                <li class="p-2.5 rounded bg-slate-900/60 border border-slate-800/80">Programming Language Fundamentals</li>
+                <!-- EDIT: SKILL_ITEM_2 -->
+                <li class="p-2.5 rounded bg-slate-900/60 border border-slate-800/80">Problem Solving</li>
+                <!-- EDIT: SKILL_ITEM_3 -->
+                <li class="p-2.5 rounded bg-slate-900/60 border border-slate-800/80">Software Development</li>
+              </ul>
+            </div>
+          </div>
+          <!-- TOOLS / TECHNOLOGIES CARD -->
+          <div class="rounded-xl border border-slate-800 bg-[#12141c] overflow-hidden shadow-lg shadow-black/30">
+            <div class="bg-slate-900/80 px-6 py-3 border-b border-slate-800 text-center">
+              <h3 class="text-base font-bold text-slate-200 font-mono-tech tracking-wide"> Tools / Technologies </h3>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-2.5 font-mono-tech text-sm text-slate-300">
+                <!-- EDIT: TOOL_ITEM_1 -->
+                <li class="p-2.5 rounded bg-slate-900/60 border border-slate-800/80">HTML/CSS, Python, Java</li>
+                <!-- EDIT: TOOL_ITEM_2 -->
+                <li class="p-2.5 rounded bg-slate-900/60 border border-slate-800/80">Visual Studio Code</li>
+                <!-- EDIT: TOOL_ITEM_3 -->
+                <li class="p-2.5 rounded bg-slate-900/60 border border-slate-800/80">Github</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== CONTACT SECTION ==================== -->
+      <section id="contact" class="space-y-6">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-center text-white font-mono-tech"> Contact </h2>
+        <div class="rounded-2xl border border-slate-800 bg-[#12141c]/70 backdrop-blur p-8 md:p-12 shadow-xl shadow-black/40 text-center max-w-3xl mx-auto space-y-3 font-mono-tech text-sm md:text-base">
+          <!-- EDIT: YOUR_EMAIL -->
+          <p class="text-slate-300"> herwinmagana@gmail.com </p>
+          <!-- EDIT: YOUR_CONTACT_INFORMATION -->
+          <p class="text-slate-300"> +63 912 345 6789 </p>
+          <!-- EDIT: YOUR_SOCIAL_LINK -->
+          <p class="text-slate-300">
+            <a href="https://github.com/herwinmagana" class="text-sky-400 hover:text-sky-300 underline underline-offset-4 transition-colors" target="_blank"> GitHub Profile </a>
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="mt-20 border-t border-slate-800 py-6 bg-[#090a0e] text-center">
+      <!-- EDIT: FOOTER_COPYRIGHT -->
+      <p class="font-mono-tech text-xs text-slate-400 tracking-wider"> 2026 HerwinMagana. All rights reserved. </p>
+    </footer>
+  </body>
+</html>
